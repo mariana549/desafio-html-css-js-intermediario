@@ -4,14 +4,35 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>quest-html-css-js-intermediario</title>
-   
+
    <link rel="stylesheet" href="/src/css/style.css">
    <link rel="stylesheet" href="/src/css/reset.css">
    <link rel="stylesheet" href="/src/css/variaveis.css">
    <link rel="stylesheet" href="/src/css/responsivo.css">
 </head>
 <body>
-   
+   <main class="main">
+      <div class="container">
+         <section class="informações-texto">
+            <h1 class="titulo-principal">Ficou com dúvida? nos mande mensagem!</h1>
+            <p class="paragrafro-principal">caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+         </section>
+         <div class="formulario">
+            <form action="#" method="get">
+               <input type="text" name="nome" class="nome-usuario" placeholder="Nome completo *">
+               <small class="obrigatorio-campo">campo obrigatório</small>
+               <input type="email" name="email" class="email-usuario" placeholder="Email *">
+               <small class="obrigatorio-campo">campo obrigatório</small>
+               <input type="tel" name="tel" class="telefone-usuario" placeholder="telefone *">
+               <small class="obrigatorio-campo">campo obrigatório</small>
+               <input type="text" class="mensagem-usuario *" placeholder="Mensagem">
+               <small class="obrigatorio-campo">campo obrigatório</small>
+            </form>
+            <p class="paragrafro-form">*campos obrigatórios</p>
+            <button type="button" onclick="enviarInformaçoes()">Enviar</button>
+         </div>
+      </div>
+   </main>
 
    <script src="index.js"></script>
 </body>
