@@ -4,37 +4,36 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>quest-html-css-js-intermediario</title>
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-
    <link rel="stylesheet" href="/src/css/variaveis.css">
    <link rel="stylesheet" href="/src/css/reset.css">
    <link rel="stylesheet" href="/src/css/responsivo.css">
    <link rel="stylesheet" href="/src/css/style.css">
+   <title>quest-html-css-js-intermediario</title>
 </head>
 
 <body>
    <main class="main">
       <div class="container">
-         <section class="informações-texto">
+         <section class="informacoes-texto">
             <h1 class="titulo-principal">Ficou com dúvida? nos mande mensagem!</h1>
-            <p class="paragrafro-principal">caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+            <p class="paragrafo-principal">caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
          </section>
          <div class="formulario">
-            <form action="#" method="get">
-               <input type="text" name="nome" class="nome-usuario" placeholder="Nome completo *">
+            <form action="#" method="get" class="form">
+               <input type="text" name="nome" class="input nome-usuario" placeholder="Nome completo *">
                <small class="obrigatorio-campo">campo obrigatório</small>
-               <input type="email" name="email" class="email-usuario" placeholder="Email *">
+               <input type="email" name="email" class="input email-usuario" placeholder="Email *">
                <small class="obrigatorio-campo">campo obrigatório</small>
-               <input type="tel" name="tel" class="telefone-usuario" placeholder="telefone *">
+               <input type="tel" name="tel" class="input telefone-usuario" placeholder="telefone *">
                <small class="obrigatorio-campo">campo obrigatório</small>
-               <input type="text" class="mensagem-usuario *" placeholder="Mensagem">
+               <input type="text" class="input mensagem-usuario *" placeholder="Mensagem" class="mensagem-input">
                <small class="obrigatorio-campo">campo obrigatório</small>
             </form>
             <p class="paragrafro-form">*campos obrigatórios</p>
-            <button type="button" onclick="enviarInformaçoes()">Enviar</button>
+            <button type="button" onclick="enviarInformaçoes()" class="button-enviar">Enviar</button>
          </div>
       </div>
    </main>
