@@ -1,8 +1,8 @@
 :root {
-   --cor-button: #3CCC87;
+   --cor-destaque: #3CCC87;
    --cor-dark-0: black;
    --cor-dark-40: white;
    --cor-fundo-01: rgba(237,88,124,1) 0%;
    --cor-fundo-02: rgba(81,133,240,1) 100%;
-   --cor-destaque: red;
+   --cor-error: red;
 }
