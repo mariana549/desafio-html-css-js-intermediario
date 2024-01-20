@@ -10,7 +10,6 @@
 
 .main .container {
    width: 80%;
-   height: 90%;
    display: grid;
    grid-template-areas: "texto formulario";
    place-items: center;
@@ -18,58 +17,56 @@
 }
 
 .main .container .informacoes-texto {
+   width: 380px;
    grid-area: texto;
    color: var(--cor-dark-40);
 }
 
 .main .container .informacoes-texto .titulo-principal {
-   width: 288px;
-   font-size: 20px;
+   font-size: 30px;
    font-weight: 900;
    text-transform: uppercase;
    margin-bottom: 10px;
 }
 
 .main .container .informacoes-texto .paragrafo-principal {
-   width: 300px;
-   font-size: 15px;
+   font-size: 20px;
    font-weight: 400;
 }
 
 .main .container .formulario {
    grid-area: formulario;
-   width: 300px;
+   max-width: 450px;
    background: var(--cor-dark-40);
-   padding: 20px;
+   padding: 25px;
+   padding-top: 10px;
    font-family: 'Roboto', sans-serif;
 }
 
-
-.main .container .formulario .form .input {
-   padding: 10px;
+.main .container .formulario .form .input, .mensagem-input{
+   padding: 15px;
    width: 100%;
-   margin-bottom: 15px;
+   margin-top: 15px;
    border-radius: 5px;
-   border: 1px solid var(--cor-dark-0);
    font-family: 'Roboto', sans-serif;
-   font-size: 15px;
+   font-size: 17px;
    font-weight: 700;
 }
 
-.main .container .formulario .form .mensagem-input{
-   height: 100px;
+.error{
+   border: 1.8px solid var(--cor-destaque);
 }
-
 
 .obrigatorio-campo {
    display: none;
+   color: var(--cor-destaque);
 }
 
 .main .container .formulario .paragrafro-form {
    font-size: 15px;
    font-weight: 400;
    text-transform: uppercase;
-   margin: 7px 0px 16px 0px;
+   margin: 15px 0px 16px 0px;
 }
 
 .button-enviar {
@@ -78,6 +75,7 @@
    color: var(--cor-dark-40);
    background-color: var(--cor-button);
    border-radius: 5px;
+   border: none;
    font-size: 15px;
    font-weight: 700;
 }
